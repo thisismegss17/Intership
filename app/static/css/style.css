@@ -1,7 +1,127 @@
 /* home.html*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    font-family: cursive;
+    font-size: 1em;
+    background-color:rgb(255, 255, 255);
+}
+.navbar{
+    height: 150px;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+.navbar-brand {
+    color: rgb(255, 244, 244);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: wavy;
+    text-align: center;
+}
 .navbar-logo{
     height: 165px;
     width: 165px;
+    margin-right: 20px;
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: wavy;
+    text-align: center;
+}
+nav{
+    background-color: #C19A6B;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    margin: 0 20px;
+}
+
+nav ul li a{
+    padding: 10px 15px;
+    color: #333;
+}
+nav ul li a:hover{
+    color: #745d5d;
+    transition: all 0.3s ease-in-out;
+}
+.dropdown-item{
+    display: block;
+    width: 100%;
+    text-decoration: wavy;
+    font-style: italic;
+    color: rgb(140, 101,101)
+}
+.main-header{
+    width: 75%;
+    margin: auto;
+    height: 170vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 100px
+}
+.header h4{
+    font-size: 22px;
+    color: #CD7F32;
+    font-weight: 550;
+}
+.header h2{
+    font-size: 48px;
+    width: 340px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+/*about.html*/
+.fillimi img{
+    height: 550px;
+    width: 100%;
+
+}
+.text-overlay h1{
+    position: relative;
+    display: inline;
+    font-family: "Qwitcher Grypen", cursive;
+    text-decoration: wavy;
+    bottom: 325px;
+    left: 500px;
+    padding: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    color: #646262;
+    letter-spacing: 0.05em;
+    -webkit-background-clip: text;
+    
+    
+    
 }
 
 
@@ -19,9 +139,6 @@
 
 
 
-
-
-
  
  
  
@@ -70,9 +187,12 @@
  
  
  
- 
- 
-@media only screen and (max-width: 1000px)
-   .navbar-logo{
-
-}
+ @media (max-width: 768px){
+    nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li{
+        margin: 10px 0;
+    }
+ }
