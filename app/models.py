@@ -6,7 +6,6 @@ class Book(models.Model):
     book_price = models.DecimalField(max_digits=10, decimal_places=2) 
     book_desciption = models.TextField()   
     sku = models.CharField(max_length=13, unique=True)
-
     book_image = models.ImageField(upload_to='about/', null=True, blank=True)
     book_slug = models.SlugField(unique=True, null=True, blank=True)
 
